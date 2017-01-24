@@ -47,24 +47,118 @@ namespace Sammlings_klasser
                 }
             }
             */
+            //Övning 3
+            /*
             List<string> kortlek = new List<string>();
-            string kort; ;
             for (int i = 0; i < 4; i++)
             {
-                for (int j = 0; i < 13; j++)
+                for (int j = 0; j < 13; j++)
                 {
-                    if (i==0)
-                        kortlek.Add("h" + i.ToString());
-                    if (i==1)
-                        kortlek.Add("k" + i.ToString());
-                    if (i==2)
-                        kortlek.Add("s" + i.ToString());
-                    if(i==3)
-                        kortlek.Add("r" + i.ToString());
+                    if (i == 0)
+                    {
+                        if (j == 11)
+                        {
+                            kortlek.Add("hKn");
+                        }
+                        else if (j == 12)
+                        {
+                            kortlek.Add("hD");
+                        }
+                        else if (j == 13)
+                        {
+                            kortlek.Add("hK");
+                        }
+                        else if (j == 0)
+                        {
+                            kortlek.Add("hE");
+                        }
+                        else
+                        {
+                            kortlek.Add("h" + j.ToString());
+                        }
+                    }
+                    if (i == 1)
+                    {
+                        if (j == 11)
+                        {
+                            kortlek.Add("sKn");
+                        }
+                        else if (j == 12)
+                        {
+                            kortlek.Add("sD");
+                        }
+                        else if (j == 13)
+                        {
+                            kortlek.Add("sK");
+                        }
+                        else if (j == 0)
+                        {
+                            kortlek.Add("sE");
+                        }
+                        else
+                        {
+                            kortlek.Add("s" + j.ToString());
+                        }
+                    }
+                    if (i == 2)
+                    {
+                        if (j == 11)
+                        {
+                            kortlek.Add("rKn");
+                        }
+                        else if (j == 12)
+                        {
+                            kortlek.Add("rD");
+                        }
+                        else if (j == 13)
+                        {
+                            kortlek.Add("rK");
+                        }
+                        else if (j == 0)
+                        {
+                            kortlek.Add("rE");
+                        }
+                        else
+                        {
+                            kortlek.Add("r" + j.ToString());
+                        }
+                    }
+                    if (i == 3)
+                    {
+                        if (j == 11)
+                        {
+                            kortlek.Add("kKn");
+                        }
+                        else if (j == 12)
+                        {
+                            kortlek.Add("kD");
+                        }
+                        else if (j == 13)
+                        {
+                            kortlek.Add("kK");
+                        }
+                        else if (j == 0)
+                        {
+                            kortlek.Add("kE");
+                        }
+                        else
+                        {
+                            kortlek.Add("k" + j.ToString());
+                        }
+                    }
                 }
 
             }
-
+            for (int k = 51; k >= 0; k--)
+            {
+                Random rnd = new Random();
+                int slumpKort = rnd.Next(0, k);
+                Console.WriteLine(kortlek[slumpKort]);
+                kortlek.RemoveAt(slumpKort);              
+            }
+            Console.ReadKey();
+            */
+            //Övning 4
 
         }
 
